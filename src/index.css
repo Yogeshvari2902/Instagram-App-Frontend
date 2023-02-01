@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.outer_navbar{
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181D31;
+}
+.outer_navbar h1{
+  color: white;
+}
+.outer_navbar >div:last-of-type{
+  width: 20%;
+}
+.outer_navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.outer_navbar ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+
+/* signup css */
+
+.outer_signup_div{
+  /* border: 1px solid red; */
+  padding: 10px;
+  display: flex;
+  height: calc(100vh - 50px);
+  justify-content: center;
+  align-items: center;
+}
+
+.inner_signup_div{
+  width: 40%;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 20px 10px;
+}
+.inner_signup_div form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inner_signup_div form h1{
+  margin-bottom: 10px;
+}
+.inner_signup_div input  , select{
+  padding: 10px;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.inner_signup_div input:last-of-type{
+  margin-top: 30px;
+  background-color: #181D31;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.outer_navbar a{
+  color: white;
+  text-decoration: none;
+}
+
+.outer_home{
+  padding: 15px;
+}
+
+.outer_post_div{
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill , 290px);
+  grid-gap:10px;
+}
+
+
+.outer_post_div > div{
+  /* border: 1px solid red; */
+  padding: 15px 10px 15px 10px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.buttons_div{
+  display: flex;
+  margin-top: 15px;
+  flex-direction: row-reverse;
+}
+.buttons_div > button{
+  margin-left: 10px;
+}
+
