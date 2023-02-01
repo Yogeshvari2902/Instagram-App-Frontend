@@ -13,16 +13,13 @@ function Signup() {
 
     function handleSubmit(e){
         e.preventDefault();
-
         let userDetails = {
             name:name.current.value,
             email:email.current.value,
             gender:gender.current.value,
             password: password.current.value
         }
-
         console.log("about to send");
-
         axios.post('http://localhost:8081/users/register' , userDetails)
         .then((res)=>{
             navigate('/login');
@@ -30,10 +27,7 @@ function Signup() {
             console.log("error occured");
             console.log(err);
         })
-
-
     }
-
 
     return (
         <>

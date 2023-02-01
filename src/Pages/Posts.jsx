@@ -9,7 +9,6 @@ function Home() {
     const jwt = cookies.get('jwt')
 
     async function getData(){
-
             axios.post('' , {
                 token:jwt
             }).then((res)=>{
@@ -17,27 +16,21 @@ function Home() {
             }).catch((Err)=>{
                 console.log(Err);
             })
-
     }
     
     useEffect(() => {
-      return () => {
-      
+      return () => { 
       };
     }, [])
 
     return (
         <>
             <Navbar />
-
-
             <div className="outer_home">
                     <h3>
-                        Total Post = 15
+                        Total Post = 10
                     </h3>
-
                     <div className="outer_post_div">
-                    
                             <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, cupiditate?</p> 
                             <div className='buttons_div'>
                                 <button>📝</button>

@@ -2,15 +2,12 @@ import React, { useRef } from 'react';
 import Navbar from '../Components/Navbar';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import Cookies from 'universal-cookie';
- 
+import Cookies from 'universal-cookie'; 
 
 function Signup() {
-
     const email = useRef();
     const password = useRef();
     const cookies = new Cookies();
-
     const navigate = useNavigate();
 
     function handleSubmit(e){
@@ -19,10 +16,7 @@ function Signup() {
         let userDetails = {
             email:email.current.value,
             password: password.current.value
-        }
-
-
-         
+        }      
 
         axios.post('http://localhost:8081/users/login' , userDetails)
         .then((res)=>{
@@ -35,7 +29,6 @@ function Signup() {
             console.log(err);
         })
     }
-
 
     return (
         <>

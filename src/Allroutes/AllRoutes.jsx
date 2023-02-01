@@ -5,7 +5,6 @@ import Login from '../Pages/Login';
 import Signup from '../Pages/Signup';
 import Posts from '../Pages/Posts';
 function AllRoutes() {
-
     return (
         <>
                 <Routes>

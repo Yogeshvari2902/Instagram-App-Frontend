@@ -21,8 +21,6 @@ function Signup() {
             token:jwt
         }
 
-        // console.log("about to send");
-
         axios.post('http://localhost:8081/posts' , userDetails)
         .then((res)=>{
             alert("data sent to backend");
@@ -30,10 +28,7 @@ function Signup() {
             console.log("error occured");
             console.log(err);
         })
-
-
     }
-
 
     return (
         <>
@@ -42,18 +37,14 @@ function Signup() {
                     <div className="inner_signup_div">
                             <form onSubmit={handleSubmit}>
                                 <h1>Create New Post</h1>
-                                <input type="text"  placeholder='Title' ref={title} required/>
-                                
-                                
+                                <input type="text"  placeholder='Title' ref={title} required/>                                      
                                 <select ref={device}>
                                     <option value="Mobile"> Mobile </option>
                                     <option value="PC"> Pc </option>
                                     <option value="Tablet">Tablet</option>
                                 </select>
-
                                     <br />
-                                <textarea ref={content} cols="55" rows="10"></textarea>
-                              
+                                <textarea ref={content} cols="55" rows="10"></textarea>                             
 
                                 <input type="submit" value="Post" />
                             </form>
